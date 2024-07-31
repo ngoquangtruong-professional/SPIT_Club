@@ -1,0 +1,112 @@
+/* Start header */
+.header {
+  background: url(../images/Header_background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  top: 0;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-100deg, #000015, #003c6c);
+  opacity: 0.7;
+}
+
+.header .header-contain,
+.header .header-welcome,
+.header .header-welcome .container-md {
+  height: 100%;
+}
+
+.header .header-contain {
+  position: relative;
+}
+
+.header .header-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+}
+
+.header .header-content .header-title {
+  font-size: 64px;
+  background: linear-gradient(to right, #5dc0f1, #b97bfa, #f66370);
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.header .header-description p {
+  margin-bottom: 0;
+}
+
+.header .header-decoration {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.header img[alt="Technology computer"] {
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+  margin: 20px;
+}
+
+.header img[alt="Leader của SPIT Club"] {
+  width: 310px;
+  height: 310px;
+  object-fit: contain;
+  position: absolute;
+  margin: 40px;
+  bottom: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 991.99px) {
+  .header .header-content .header-title {
+    font-size: 56px;
+  }
+  .header img[alt="Technology computer"] {
+    margin: 10px;
+  }
+  .header img[alt="Leader của SPIT Club"] {
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 767.99px) {
+  .header .header-content .header-title {
+    font-size: 48px;
+  }
+  .header img[alt="Technology computer"],
+  .header img[alt="Leader của SPIT Club"] {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 575.99px) {
+  .header img[alt="Technology computer"] {
+    width: 100px;
+    height: 100px;
+  }
+  .header img[alt="Leader của SPIT Club"] {
+    width: 250px;
+    height: 250px;
+  }
+}
+/* End header */
