@@ -158,6 +158,10 @@ a:hover {
 /* End global styles */
 
 /* Start menu */
+.menu-wrapper {
+  height: auto;
+}
+
 .menu {
   height: 80px;
   position: relative;
@@ -269,7 +273,7 @@ a:hover {
     font-size: 30px;
   }
   .menu .navigation {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     display: none;

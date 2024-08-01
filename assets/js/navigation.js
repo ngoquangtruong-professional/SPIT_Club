@@ -1,24 +1,16 @@
-// document.getElementById("showNavigation").addEventListener("click", function () {
-//     document.getElementById("navigation").classList.add("show");
-//     document.getElementById("navigationOverlay").classList.add("show");
-//     document.getElementById("showNavigation").classList.add("hide");
-//     document.getElementById("menuLogo").classList.add("hide");
-// });
-
-// document.getElementById("hideNavigation").addEventListener("click", function () {
-//     document.getElementById("navigation").classList.remove("show");
-//     document.getElementById("showNavigation").classList.remove("hide");
-//     document.getElementById("menuLogo").classList.remove("hide");
-//     document.getElementById("navigationOverlay").classList.remove("show");
-// });
-
 window.addEventListener('scroll', function() {
     var menu = document.querySelector('.menu');
-    var menuHeight = menu.offsetHeight;
+    var menuWrapper = document.querySelector('.menu-wrapper');
+    var menuHeight = menuWrapper.offsetHeight;
     var scrollPosition = window.scrollY || window.pageYOffset;
+    var navigation = document.getElementById("navigation");
 
     if (scrollPosition > menuHeight) {
-        menu.classList.add('fixed');
+        if (!navigation.classList.contains("show")) {
+            menu.classList.add('fixed');
+        } else {
+            menu.classList.remove('fixed');
+        }
     } else {
         menu.classList.remove('fixed');
     }
@@ -34,13 +26,13 @@ document.getElementById("showNavigation").addEventListener("click", function () 
         document.getElementById("showNavigation").classList.add("hide");
         document.getElementById("menuLogo").classList.add("hide");
 
-        // Thêm lớp hoạt hình khi hiển thị
         navigation.classList.remove("swipeOutRight");
         navigation.classList.add("swipeInRight");
 
-        // Đảm bảo overlay hiển thị
         overlay.classList.remove("hide");
         overlay.classList.add("show");
+
+        document.querySelector('.menu').classList.remove('fixed');
     }
 });
 
@@ -59,10 +51,17 @@ document.getElementById("hideNavigation").addEventListener("click", function () 
 
         setTimeout(function() {
             navigation.classList.remove("show");
-            // Đảm bảo overlay không còn lớp show
             
             overlay.classList.remove("show");
-        }, 1000);
+
+            var scrollPosition = window.scrollY || window.pageYOffset;
+            var menuWrapper = document.querySelector('.menu-wrapper');
+            var menuHeight = menuWrapper.offsetHeight;
+
+            if (scrollPosition > menuHeight) {
+                document.querySelector('.menu').classList.add('fixed');
+            }
+        }, 750);
         
     }
 });
