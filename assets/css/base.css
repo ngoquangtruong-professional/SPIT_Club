@@ -177,7 +177,11 @@ a:hover {
   background-color: #ffffff;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   transform: translateY(0);
-  .menu-content,
+  .menu-content {
+    color: transparent !important;
+    background: linear-gradient(45deg, #003c6c, #004f8b, #0075a4, #00a0b5);
+    background-clip: text;
+  }
   .navigation-item,
   .show-icon {
     color: transparent !important;
