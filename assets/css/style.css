@@ -4,22 +4,9 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
-  top: 0;
+  height: 100vh;
+  margin-top: -80px;
   width: 100%;
-  position: absolute;
-  z-index: -1;
-}
-
-.header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(-100deg, #000015, #003c6c);
-  opacity: 0.7;
 }
 
 .header .header-contain,
@@ -33,7 +20,7 @@
 }
 
 .header .header-content {
-  height: 70%;
+  height: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -54,6 +41,48 @@
   margin-bottom: 0;
 }
 
+.header .header-description i {
+  background: linear-gradient(45deg, #e0e0e0, #ffffff, #f0f0f0);
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); 
+  filter: brightness(1.5); 
+  font-size: 24px;
+  margin-left: 7.5px;
+  display: inline-block;
+}
+
+
+.header .explore-introduce {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  width: fit-content;
+  padding: 15px;
+  box-sizing: content-box;
+  border-radius: 32px;
+  background: linear-gradient(to right, #5dc0f1, #b97bfa, #f66370);
+  margin-top: 24px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header .explore-introduce p {
+  margin: 0;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.header .explore-introduce p > i {
+  margin-left: 15px;
+}
+
+.header .explore-introduce:hover {
+  background: linear-gradient(to left, #5dc0f1, #b97bfa, #f66370);
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .header-decoration {
   position: absolute;
   bottom: 0;
@@ -61,6 +90,11 @@
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  overflow: hidden;
+}
+
+.header-decoration img {
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .header img[alt="Technology computer"] {
@@ -90,6 +124,9 @@
 }
 
 @media screen and (max-width: 767.99px) {
+  .header {
+    margin-top: -60px;
+  }
   .header .header-content {
     padding-right: 15px;
   }
@@ -119,3 +156,10 @@
   }
 }
 /* End header */
+
+/* Start introduce overview */
+.introduce-overview {
+  height: 1000px;
+}
+
+/* End introduce overview */

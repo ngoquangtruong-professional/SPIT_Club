@@ -1,3 +1,87 @@
+/* Start keyframe animation */
+@keyframes swipeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes swipeOutRight {
+  from {
+    opacity: 1;
+    transform: none;
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+@keyframes shakeLeft {
+  0% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+/* Hiệu ứng lắc qua lại cho hình ảnh bên phải */
+@keyframes shakeRight {
+  0% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}
+
+.header-decoration img.left {
+  animation: shakeLeft 5s infinite ease-in-out;
+}
+
+.header-decoration img.right {
+  animation: shakeRight 5s infinite ease-in-out;
+}
+
+.swipeInRight {
+  animation-name: swipeInRight;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.swipeOutRight {
+  animation-name: swipeOutRight;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.show {
+  display: block !important;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+}
+
+.hide {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+  display: none !important;
+}
+
+/* End keyframe */
+
 /* Start font text */
 @font-face {
   font-family: "Quicksand";
@@ -74,13 +158,33 @@ a:hover {
 /* End global styles */
 
 /* Start menu */
-
 .menu {
   height: 80px;
   position: relative;
+  transition: top 1s ease, box-shadow 0.5s ease, background-color 0.3s ease; /* Đảm bảo tất cả thuộc tính cần thiết */
+  z-index: 1000;
+}
+
+.menu.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transform: translateY(0);
+  .menu-content,
+  .navigation-item,
+  .show-icon {
+    color: transparent !important;
+    background: linear-gradient(to right, #5dc0f1, #b97bfa, #f66370);
+    background-clip: text;
+  }
 }
 
 .menu .menu-contain {
+  position: absolute;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -92,10 +196,11 @@ a:hover {
 .menu .menu-logo {
   display: flex;
   align-items: center;
+  transition: transform 0.3s ease;
 }
 
 .menu .menu-logo:hover {
-  color: #ffffd3;
+  transform: scale(1.05);
 }
 
 .menu .menu-logo img {
@@ -108,10 +213,12 @@ a:hover {
 .menu .menu-content .menu-subtitle {
   margin-bottom: 0;
   font-size: 14px;
+  font-weight: 600;
 }
 
 .menu .menu-content .menu-title {
   font-size: 16px;
+  font-weight: 800;
 }
 
 .menu .navigation .navigation-item {
@@ -153,12 +260,6 @@ a:hover {
 }
 
 @media screen and (max-width: 991.99px) {
-  .show {
-    display: block !important;
-  }
-  .hide {
-    display: none !important;
-  }
   .menu .menu-contain {
     position: relative;
   }
@@ -177,7 +278,7 @@ a:hover {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
       rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
       rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    background-color: #ffffffe0;
+    background-color: #ffffffee;
     z-index: 2;
   }
   .menu .navigation-close {
@@ -189,10 +290,12 @@ a:hover {
   }
   .menu .navigation-close .hide-icon {
     font-size: 40px;
-    color: #000000;
+    color: transparent;
+    background: linear-gradient(to right, #5dc0f1, #b97bfa, #f66370);
+    background-clip: text;
   }
   .menu .navigation-close .hide-icon:hover {
-    color: #4580c2;
+    color: #ffffd3;
   }
   .menu .navigation-logo img {
     height: 50px;
@@ -204,18 +307,20 @@ a:hover {
     padding: 15px 10px 15px 30px;
     display: inline-block;
     width: 100%;
-    color: #000000;
+    color: transparent;
+    background: linear-gradient(to right, #5dc0f1, #b97bfa, #f66370);
+    background-clip: text;
   }
   .menu .navigation-item::before {
     height: 100%;
     bottom: 0;
     left: 0;
-    background-color: #ffffd3;
+    background: linear-gradient(to right, #5dc0f1, #b97bfa, #f66370);
     transition: width 0.3s ease-in-out;
     z-index: -1;
   }
   .menu .navigation .navigation-item:hover {
-    color: #4580c2;
+    color: #ffffd3;
   }
   .menu .mask {
     width: 100%;
@@ -258,9 +363,6 @@ a:hover {
   }
   .menu .show-icon {
     font-size: 20px;
-  }
-  .menu .mask {
-    width: 100%;
   }
 }
 
