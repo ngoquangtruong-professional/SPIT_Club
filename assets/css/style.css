@@ -92,7 +92,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.header-decoration {
+.header .header-decoration {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -102,18 +102,18 @@
   overflow: hidden;
 }
 
-.header-decoration img {
+.header .header-decoration img {
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.header img[alt="Technology computer"] {
+.header .header-decoration img.right {
   width: 130px;
   height: 130px;
   object-fit: contain;
   margin: 20px;
 }
 
-.header img[alt="Leader của SPIT Club"] {
+.header .header-decoration img.left {
   width: 310px;
   height: 310px;
   object-fit: contain;
@@ -124,10 +124,10 @@
   .header .header-content .header-title {
     font-size: 56px;
   }
-  .header img[alt="Technology computer"] {
+  .header .header-decoration img.right {
     margin: 10px;
   }
-  .header img[alt="Leader của SPIT Club"] {
+  .header .header-decoration img.left {
     margin: 20px;
   }
 }
@@ -148,18 +148,17 @@
   .header .header-content .header-description {
     font-size: 16px;
   }
-  .header img[alt="Technology computer"],
-  .header img[alt="Leader của SPIT Club"] {
+  .header .header-decoration img.left, .header .header-decoration img.right {
     margin: 0;
   }
 }
 
 @media screen and (max-width: 575.99px) {
-  .header img[alt="Technology computer"] {
+  .header .header-decoration img.right {
     width: 100px;
     height: 100px;
   }
-  .header img[alt="Leader của SPIT Club"] {
+  .header .header-decoration img.left {
     width: 250px;
     height: 250px;
   }

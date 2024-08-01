@@ -243,6 +243,7 @@ a:hover {
 }
 
 .menu .navigation .navigation-item {
+  text-transform: uppercase;
   display: inline-block;
   margin-left: 30px;
   font-size: 16px;
