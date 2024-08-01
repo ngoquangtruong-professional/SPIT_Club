@@ -35,6 +35,16 @@
   color: transparent;
   font-weight: bold;
   margin-bottom: 16px;
+  transition: background 0.6s ease, transform 0.6s ease;
+}
+
+.header .header-content .header-title:hover {
+  background: linear-gradient(to left, #5dc0f1, #b97bfa, #f66370, #5dc0f1, #b97bfa, #f66370);
+  background-size: 200% 100%; 
+  background-position: 100% 0; 
+  background-clip: text;
+  color: transparent;
+  transform: scale(1.05);
 }
 
 .header .header-description p {
@@ -51,7 +61,6 @@
   margin-left: 7.5px;
   display: inline-block;
 }
-
 
 .header .explore-introduce {
   display: flex;
@@ -110,7 +119,7 @@
   object-fit: contain;
   margin: 40px;
 }
-
+/* Start header responsive */
 @media screen and (max-width: 991.99px) {
   .header .header-content .header-title {
     font-size: 56px;
@@ -155,6 +164,7 @@
     height: 250px;
   }
 }
+/* End header responsive */
 /* End header */
 
 /* Start introduce overview */

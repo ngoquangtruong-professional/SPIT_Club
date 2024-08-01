@@ -33,7 +33,6 @@
   }
 }
 
-/* Hiệu ứng lắc qua lại cho hình ảnh bên phải */
 @keyframes shakeRight {
   0% {
     transform: translateX(10px);
@@ -80,7 +79,7 @@
   display: none !important;
 }
 
-/* End keyframe */
+/* End keyframe animation*/
 
 /* Start font text */
 @font-face {
@@ -123,7 +122,6 @@
 /* Start root variables */
 :root {
   --fontTextOne: "Quicksand", sans-serif;
-  --BackgroundColorOne: #f0f0f0;
 }
 /* End root variables */
 
@@ -142,7 +140,7 @@ a:hover {
   color: #ffffff;
   text-decoration: none;
 }
-
+/* Start global styles responsive */
 @media screen and (max-width: 991.99px) {
   body {
     font-size: 16px;
@@ -155,6 +153,7 @@ a:hover {
   }
 }
 
+/* End global styles responsive */
 /* End global styles */
 
 /* Start menu */
@@ -165,7 +164,7 @@ a:hover {
 .menu {
   height: 80px;
   position: relative;
-  transition: top 1s ease, box-shadow 0.5s ease, background-color 0.3s ease; /* Đảm bảo tất cả thuộc tính cần thiết */
+  transition: top 1s ease, box-shadow 0.5s ease, background-color 0.3s ease;
   z-index: 1000;
 }
 
@@ -177,17 +176,31 @@ a:hover {
   background-color: #ffffff;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   transform: translateY(0);
-  .menu-content {
-    color: transparent !important;
-    background: linear-gradient(45deg, #003c6c, #004f8b, #0075a4, #00a0b5);
-    background-clip: text;
-  }
-  .navigation-item,
-  .show-icon {
-    color: transparent !important;
-    background: linear-gradient(to right, #5dc0f1, #b97bfa, #f66370);
-    background-clip: text;
-  }
+}
+
+.menu.fixed .menu-content {
+  color: transparent;
+  background: linear-gradient(45deg, #003c6c, #004f8b, #0075a4, #00a0b5);
+  background-clip: text;
+}
+
+.menu.fixed .navigation-item,
+.menu.fixed .show-icon {
+  color: transparent;
+  background: linear-gradient(to right, #5dc0f1, #b97bfa, #f66370);
+  background-clip: text;
+}
+
+.menu.fixed .menu-content:hover {
+  background: linear-gradient(-45deg, #003c6c, #004f8b, #0075a4, #00a0b5);
+  background-clip: text;
+}
+
+.menu.fixed .navigation-item:hover,
+.menu.fixed .show-icon:hover {
+  color: transparent !important;
+  background: linear-gradient(to left, #5dc0f1, #b97bfa, #f66370);
+  background-clip: text;
 }
 
 .menu .menu-contain {
@@ -230,10 +243,17 @@ a:hover {
 }
 
 .menu .navigation .navigation-item {
+  display: inline-block;
   margin-left: 30px;
   font-size: 16px;
   font-weight: bold;
   position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.menu .navigation .navigation-item:hover {
+  color: #ffffd3;
+  transform: scale(1.05);
 }
 
 .menu .navigation-item::before {
@@ -244,7 +264,13 @@ a:hover {
   width: 0;
   height: 2.5px;
   border-radius: 5px;
-  background: linear-gradient(to right, transparent 0%, #b0b0b0 30%, #dcdcdc 70%, transparent 100%);
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    #b0b0b0 30%,
+    #dcdcdc 70%,
+    transparent 100%
+  );
   transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
 }
 
@@ -253,15 +279,11 @@ a:hover {
   left: 0;
 }
 
-.menu .navigation .navigation-item:hover {
-  color: #ffffd3;
-}
-
 .menu .show-icon,
 .menu .navigation-close {
   display: none;
 }
-
+/* Start menu responsive */
 @media screen and (max-width: 1199.99px) {
   .menu .navigation .navigation-item {
     margin-left: 15px;
@@ -276,6 +298,10 @@ a:hover {
     display: block;
     color: #ffffff;
     font-size: 30px;
+    transition: transform 0.3s ease;
+  }
+  .menu .show-icon:hover {
+    transform: scale(1.2);
   }
   .menu .navigation {
     position: fixed;
@@ -303,9 +329,11 @@ a:hover {
     background: linear-gradient(to right, #5dc0f1, #b97bfa, #f66370);
     background-clip: text;
     cursor: pointer;
+    transition: transform 0.3s ease;
   }
   .menu .navigation-close .hide-icon:hover {
     color: #ffffd3;
+    transform: scale(1.2);
   }
   .menu .navigation-logo img {
     height: 50px;
@@ -325,7 +353,13 @@ a:hover {
     height: 100%;
     bottom: 0;
     left: 0;
-    background: linear-gradient(to right, #5dc0f1, #b97bfa, #f66370, transparent 100%);
+    background: linear-gradient(
+      to right,
+      #5dc0f1,
+      #b97bfa,
+      #f66370,
+      transparent 100%
+    );
     transition: width 0.3s ease-in-out;
     border-radius: 0;
     z-index: -1;
@@ -380,4 +414,5 @@ a:hover {
 @media screen and (max-width: 575.99px) {
 }
 
+/* End menu responsive */
 /* End menu */
