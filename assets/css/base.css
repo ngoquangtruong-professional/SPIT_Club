@@ -243,7 +243,8 @@ a:hover {
   bottom: -5px;
   width: 0;
   height: 2.5px;
-  background-color: #cdcdcd;
+  border-radius: 5px;
+  background: linear-gradient(to right, transparent 0%, #b0b0b0 30%, #dcdcdc 70%, transparent 100%);
   transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
 }
 
@@ -301,6 +302,7 @@ a:hover {
     color: transparent;
     background: linear-gradient(to right, #5dc0f1, #b97bfa, #f66370);
     background-clip: text;
+    cursor: pointer;
   }
   .menu .navigation-close .hide-icon:hover {
     color: #ffffd3;
@@ -315,16 +317,17 @@ a:hover {
     padding: 15px 10px 15px 30px;
     display: inline-block;
     width: 100%;
-    color: transparent;
     background: linear-gradient(to right, #5dc0f1, #b97bfa, #f66370);
+    color: transparent;
     background-clip: text;
   }
   .menu .navigation-item::before {
     height: 100%;
     bottom: 0;
     left: 0;
-    background: linear-gradient(to right, #5dc0f1, #b97bfa, #f66370);
+    background: linear-gradient(to right, #5dc0f1, #b97bfa, #f66370, transparent 100%);
     transition: width 0.3s ease-in-out;
+    border-radius: 0;
     z-index: -1;
   }
   .menu .navigation .navigation-item:hover {
