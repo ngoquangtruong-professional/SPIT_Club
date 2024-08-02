@@ -493,18 +493,18 @@ a:hover {
 .top-button, .bottom-button {
   display: none;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 25px;
+  right: 25px;
   z-index: 1000;
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   background: linear-gradient(135deg, #7b2ff7, #f107a3);
   border-radius: 50%;
   border: none;
   outline: none;
   cursor: pointer;
   color: white;
-  font-size: 24px;
+  font-size: 26px;
   align-items: center;
   justify-content: center;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -540,6 +540,16 @@ a:hover {
 /* Start button components responsive */
 @media screen and (max-width: 1199.99px) {
   .top-button, .bottom-button {
+    height: 80px;
+    width: 80px;
+    font-size: 24px;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+@media screen and (max-width: 991.99px) {
+  .top-button, .bottom-button {
     height: 70px;
     width: 70px;
     font-size: 22px;
@@ -548,7 +558,7 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 991.99px) {
+@media screen and (max-width: 767.99px) {
   .top-button, .bottom-button {
     height: 60px;
     width: 60px;
@@ -565,16 +575,6 @@ a:hover {
     font-size: 18px;
     bottom: 5px;
     right: 5px;
-  }
-}
-
-@media screen and (max-width: 767.99px) {
-  .top-button, .bottom-button {
-    height: 40px;
-    width: 40px;
-    font-size: 16px;
-    bottom: 0;
-    right: 0;
   }
 }
 /* End button components responsive*/
