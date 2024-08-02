@@ -8,13 +8,11 @@ function scrollFunction() {
     var documentHeight = document.documentElement.scrollHeight;
 
     if (scrollTop >= documentHeight / 2) {
-        document.getElementById("bottomButton").classList.add("hide");
-        document.getElementById("topButton").classList.remove("hide");
-        document.getElementById("topButton").classList.add("show");
+        document.getElementById("bottomButton").style.display = "none";
+        document.getElementById("topButton").style.display = "flex";
     } else {
-        document.getElementById("bottomButton").classList.remove("hide");
-        document.getElementById("topButton").classList.remove("show");
-        document.getElementById("topButton").classList.add("hide");
+        document.getElementById("bottomButton").style.display = "flex";
+        document.getElementById("topButton").style.display = "none";
     }
 }
 
