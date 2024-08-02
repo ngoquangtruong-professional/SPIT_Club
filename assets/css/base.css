@@ -457,10 +457,10 @@ a:hover {
     font-size: 14px;
   }
   .menu .navigation .navigation-item:hover {
-    margin-left: 30px;
+    margin-left: 18.75px;
   }
   .menu .navigation .navigation-item:hover::before {
-    left: -30px;
+    left: -18.75px;
   }
   .menu .navigation .navigation-item.active:hover {
     margin-left: 0px;
