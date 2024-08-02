@@ -23,6 +23,8 @@ document.getElementById("showNavigation").addEventListener("click", function () 
     if (!navigation.classList.contains("show")) {
         navigation.classList.add("show");
         overlay.classList.add("show");
+        document.getElementById("bottomButton").classList.add("hide");
+        document.getElementById("topButton").classList.add("hide");
         document.getElementById("showNavigation").classList.add("hide");
         document.getElementById("menuLogo").classList.add("hide");
 
@@ -45,6 +47,8 @@ document.getElementById("hideNavigation").addEventListener("click", function () 
         navigation.classList.add("swipeOutRight");
 
         overlay.classList.add("hide");
+        document.getElementById("bottomButton").classList.remove("hide");
+        document.getElementById("topButton").classList.remove("hide");
 
         document.getElementById("showNavigation").classList.remove("hide");
         document.getElementById("menuLogo").classList.remove("hide");

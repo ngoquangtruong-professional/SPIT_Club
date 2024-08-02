@@ -7,7 +7,7 @@ function scrollFunction() {
     var windowHeight = window.innerHeight;
     var documentHeight = document.documentElement.scrollHeight;
 
-    if (scrollTop > documentHeight / 2 - 100) {
+    if (scrollTop >= documentHeight / 2) {
         document.getElementById("bottomButton").classList.add("hide");
         document.getElementById("topButton").classList.remove("hide");
         document.getElementById("topButton").classList.add("show");
