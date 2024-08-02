@@ -7,7 +7,7 @@ function scrollFunction() {
     var windowHeight = window.innerHeight;
     var documentHeight = document.documentElement.scrollHeight;
 
-    if (scrollTop >= documentHeight / 2) {
+    if (scrollTop >= documentHeight / 2 - 200) {
         document.getElementById("bottomButton").style.display = "none";
         document.getElementById("topButton").style.display = "flex";
     } else {
