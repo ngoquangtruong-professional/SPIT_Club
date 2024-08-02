@@ -488,3 +488,58 @@ a:hover {
 
 /* End menu responsive */
 /* End menu */
+
+/* Start button components */
+.top-button, .bottom-button {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #7b2ff7, #f107a3);
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.bottom-button {
+  display: flex;
+}
+
+.top-button:hover, .bottom-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  background-color: #555;
+}
+
+.top-button::before, .bottom-button::before {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.4), transparent);
+  top: -10%;
+  left: -10%;
+  transition: all 0.3s;
+  transform: scale(0.8);
+  border-radius: 50%;
+}
+
+.top-button:hover::before, .bottom-button:hover::before {
+  transform: scale(1);
+}
+/* End button components */
+
+
+
+
+

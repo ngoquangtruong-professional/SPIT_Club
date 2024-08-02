@@ -73,7 +73,7 @@
     <!-- End menu -->
 
     <!-- Start header -->
-    <header class="header">
+    <header class="header" id="header">
       <div class="header-contain">
         <div class="header-welcome">
           <div class="container-md">
@@ -101,7 +101,7 @@
             </div>
           </div>
         </div>
-        <div class="header-decoration">
+        <div class="header-decoration" id="me">
           <img
             src="./assets/images/Technology_computer.png"
             alt="Technology computer"
@@ -120,6 +120,31 @@
     <!-- Start introduce overview -->
     <section class="introduce-overview"></section>
     <!-- End introduce overview -->
+
+    <!-- Start button components -->
+    <!-- Start button to top -->
+    <button
+      onclick="topFunction()"
+      class="top-button"
+      id="topButton"
+      title="Go to top"
+    >
+      <i class="fa-solid fa-angle-up"></i>
+    </button>
+    <!-- End button to top -->
+
+    <!-- Start button to bottom -->
+    <button
+      onclick="bottomFunction()"
+      class="bottom-button"
+      id="bottomButton"
+      title="Go to bottom"
+    >
+      <i class="fa-solid fa-angle-down"></i>
+    </button>
+    <!-- End button to bottom -->
+     <script src="./assets/js/button_components.js"></script>
+    <!-- End button components -->
   </body>
   <script src="./assets/animations/WOW/dist/wow.js"></script>
   <script>

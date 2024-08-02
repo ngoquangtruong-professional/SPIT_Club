@@ -1,4 +1,4 @@
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     var menu = document.querySelector('.menu');
     var menuWrapper = document.querySelector('.menu-wrapper');
     var menuHeight = menuWrapper.offsetHeight;
@@ -49,9 +49,9 @@ document.getElementById("hideNavigation").addEventListener("click", function () 
         document.getElementById("showNavigation").classList.remove("hide");
         document.getElementById("menuLogo").classList.remove("hide");
 
-        setTimeout(function() {
+        setTimeout(function () {
             navigation.classList.remove("show");
-            
+
             overlay.classList.remove("show");
 
             var scrollPosition = window.scrollY || window.pageYOffset;
@@ -62,7 +62,6 @@ document.getElementById("hideNavigation").addEventListener("click", function () 
                 document.querySelector('.menu').classList.add('fixed');
             }
         }, 750);
-        
     }
 });
 
