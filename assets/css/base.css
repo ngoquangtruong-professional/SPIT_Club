@@ -203,30 +203,28 @@ a:hover {
 }
 
 .menu .menu-contain {
-  position: absolute;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 0;
+  padding-right: 0;
   height: 100%;
 }
 
-.menu .menu-logo {
+.menu .menu-logo, .navigation .navigation-logo {
   display: flex;
   align-items: center;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.menu .menu-logo:hover {
+.menu .menu-logo:hover, .navigation .navigation-logo:hover {
   transform: scale(1.05);
   color: #ffffd3;
 }
 
 .menu .menu-logo img {
-  height: 40px;
-  width: 40px;
+  height: 45px;
+  width: 45px;
   object-fit: cover;
   margin-right: 15px;
 }
@@ -234,13 +232,12 @@ a:hover {
 .menu .menu-content .menu-subtitle {
   text-transform: uppercase !important;
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
 }
 
 .menu .menu-content .menu-title {
   text-transform: uppercase !important;
-  font-size: 16px;
   font-weight: 800;
 }
 
@@ -248,7 +245,6 @@ a:hover {
   text-transform: uppercase !important;
   display: inline-block;
   margin-left: 30px;
-  font-size: 16px;
   font-weight: bold;
   position: relative;
   transition: color 0.3s ease, transform 0.3s ease;
@@ -325,8 +321,19 @@ a:hover {
 }
 /* Start menu responsive */
 @media screen and (max-width: 1199.99px) {
+  .menu .menu-logo img {
+    height: 40px;
+    width: 40px;
+  }
+  .menu .menu-content .menu-subtitle {
+    font-size: 14px;
+  }
+  .menu .menu-content .menu-title {
+    font-size: 16px;
+  }
   .menu .navigation .navigation-item {
     margin-left: 15px;
+    font-size: 16px;
   }
 }
 
@@ -432,8 +439,8 @@ a:hover {
     height: 60px;
   }
   .menu .menu-logo img {
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
   }
   .menu .menu-content {
     display: none;
@@ -447,8 +454,8 @@ a:hover {
     background-color: #ffffffee;
   }
   .menu .navigation-logo img {
-    height: 40px;
-    width: 40px;
+    height: 45px;
+    width: 45px;
   }
   .menu .navigation-close .hide-icon {
     font-size: 30px;
