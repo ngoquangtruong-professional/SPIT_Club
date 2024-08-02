@@ -94,6 +94,8 @@ body {
   font-family: var(--fontTextOne);
   font-size: 18px;
   color: #ffffff;
+  scroll-behavior: smooth !important;
+
 }
 
 a {

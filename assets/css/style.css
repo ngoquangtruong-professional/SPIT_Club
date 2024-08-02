@@ -234,7 +234,7 @@
   .overview {
     padding: 40px 0;
   }
-  .overview .overview-content {
+  .overview .overview-content .content-header {
     text-align: center;
   }
   .overview .content-header .overview-title {
