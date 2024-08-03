@@ -565,7 +565,7 @@ a:hover {
   margin: 0;
 }
 
-.footer .footer-page .inner-body a.active {
+.footer .footer-page .inner-body a.active, .footer .footer-page .inner-body a:hover {
   color: #FFA500;
 }
 
@@ -578,6 +578,7 @@ a:hover {
 .copy-right p {
   color: #192335;
   margin: 0;
+  font-size: 12px;
 }
 /* Start footer responsive */
 @media screen and (min-width: 1020px){

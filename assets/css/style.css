@@ -431,7 +431,7 @@
 }
 
 .home-achi .inner-body-element:nth-child(odd) {
-  border-right: 2px dashed black;
+  border-right: 1px solid #000;
 }
 
 .home-achi .hidden-responsive > p{
