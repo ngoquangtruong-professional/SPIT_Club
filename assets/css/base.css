@@ -106,6 +106,11 @@ a:hover {
   color: #ffffff;
   text-decoration: none;
 }
+
+*::selection {
+  background: #5ce1e640;
+  color: #b87bfab0;
+}
 /* Start global styles responsive */
 @media screen and (max-width: 991.99px) {
   body {
@@ -454,6 +459,30 @@ a:hover {
 
 /* End menu responsive */
 /* End menu */
+
+/* Start link button */
+.link-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  width: fit-content;
+  box-sizing: content-box;
+}
+
+.link-button p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.link-button p > i {
+  margin-left: 15px;
+}
+
+.link-button:hover {
+  
+}
+/* End link button */
 
 /* Start button components */
 .top-button, .bottom-button {
