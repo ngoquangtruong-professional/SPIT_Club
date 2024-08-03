@@ -410,10 +410,10 @@
 
 .question-answer .card-header .btn .icon {
   position: absolute;
-  right: 20px;
+  right: 10px;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 14px;
+  font-size: 12px;
   transition: transform 0.3s ease;
 }
 
@@ -463,7 +463,7 @@
 @media (max-width: 768px) {
   .question-answer .qa-head {
     padding: 20px;
-    border-radius: none;
+    border-radius: 0;
   }
   .question-answer .inner-main {
     border-radius: 0;
@@ -498,22 +498,21 @@
 
 @media (max-width: 576px) {
   .question-answer {
-    padding: 40px 0;
+    padding: 60px 0;
   }
   .question-answer .qa-head {
     padding: 15px;
   }
-
   .question-answer .qa-title {
     font-size: 24px;
   }
-
   .question-answer .card-header .btn {
     padding: 8px 10px;
+    font-size: 14px;
   }
-
   .question-answer .card-body {
     padding: 10px 15px;
+    font-size: 12px;
   }
 }
 /* End Q&A responsive */
