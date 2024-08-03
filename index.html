@@ -51,6 +51,7 @@
 
     <title>SPIT Club</title>
   </head>
+
   <body>
     <!-- Start menu -->
     <div class="menu-wrapper">
@@ -118,9 +119,9 @@
                   ></strong>
                 </p>
               </div>
-              <a href="#overview" class="link-button explore-introduce"
-                ><p>Explore Now<i class="fa-solid fa-arrow-down"></i></p
-              ></a>
+              <a href="#overview" class="link-button explore-introduce">
+                <p>Explore Now<i class="fa-solid fa-arrow-down"></i></p>
+              </a>
             </div>
           </div>
         </div>
@@ -149,6 +150,7 @@
               <img
                 src="./assets/images/index/Overview/Overview_shortcut.png"
                 alt=""
+                class="animate__animated animate__flipInX wow" data-wow-duration="2s"
               />
             </div>
           </div>
@@ -222,10 +224,329 @@
             <p>Xem thêm<i class="fa-brands fa-wpexplorer"></i></p>
           </a>
         </div>
-        
       </div>
     </section>
     <!-- End activities -->
+
+    <!-- Start Q&A -->
+    <section class="question-answer">
+      <div class="container-md wow animate__fadeInUp">
+        <div class="row">
+          <div class="col-12">
+            <div class="inner-main">
+              <div class="qa-head">
+                <h2 class="qa-title">Q & A</h2>
+              </div>
+              <div class="inner-body">
+                <div class="accordion" id="accordionQA">
+                  <div class="card wow animate__fadeInUp" data-wow-delay="0.1s">
+                    <div class="card-header" id="headingOne">
+                      <h2 class="mb-0">
+                        <button
+                          class="btn btn-link btn-block text-left collapsed"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapseOne"
+                          aria-expanded="true"
+                          aria-controls="collapseOne"
+                        >
+                          Học ngành khác có thể tham gia CLB không?
+                          <span class="icon"></span>
+                        </button>
+                      </h2>
+                    </div>
+                    <div
+                      id="collapseOne"
+                      class="collapse"
+                      aria-labelledby="headingOne"
+                      data-parent="#accordionQA"
+                    >
+                      <div class="card-body">
+                        <i class="fa-regular fa-comment-dots"></i>Không, vì câu
+                        lạc bộ chỉ dành cho các bạn thuộc ngành Công Nghệ Thông
+                        Tin.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card wow animate__fadeInUp" data-wow-delay="0.2s">
+                    <div class="card-header" id="headingTwo">
+                      <h2 class="mb-0">
+                        <button
+                          class="btn btn-link btn-block text-left collapsed"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo"
+                        >
+                          Câu lạc bộ có hợp tác với các công ty hay tổ chức nào
+                          không?
+                          <span class="icon"></span>
+                        </button>
+                      </h2>
+                    </div>
+                    <div
+                      id="collapseTwo"
+                      class="collapse"
+                      aria-labelledby="headingTwo"
+                      data-parent="#accordionQA"
+                    >
+                      <div class="card-body">
+                        <i class="fa-regular fa-comment-dots"></i>CLB có hợp tác
+                        với các công ty công nghệ ở Huế và Đà Nẵng điển hình như
+                        FPT Software.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card wow animate__fadeInUp" data-wow-delay="0.3s">
+                    <div class="card-header" id="headingThree">
+                      <h2 class="mb-0">
+                        <button
+                          class="btn btn-link btn-block text-left collapsed"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapseThree"
+                          aria-expanded="false"
+                          aria-controls="collapseThree"
+                        >
+                          Tại sao CLB lại chỉ tuyển sinh viên năm nhất?
+                          <span class="icon"></span>
+                        </button>
+                      </h2>
+                    </div>
+                    <div
+                      id="collapseThree"
+                      class="collapse"
+                      aria-labelledby="headingThree"
+                      data-parent="#accordionQA"
+                    >
+                      <div class="card-body">
+                        <i class="fa-regular fa-comment-dots"></i>Vì CLB năm nay
+                        sẽ giới hạn lại số lượng thành viên.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card wow animate__fadeInUp" data-wow-delay="0.4s">
+                    <div class="card-header" id="headingFour">
+                      <h2 class="mb-0">
+                        <button
+                          class="btn btn-link btn-block text-left collapsed"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapseFour"
+                          aria-expanded="false"
+                          aria-controls="collapseFour"
+                        >
+                          CLB ngoài dạy thuật toán còn dạy gì nữa không?
+                          <span class="icon"></span>
+                        </button>
+                      </h2>
+                    </div>
+                    <div
+                      id="collapseFour"
+                      class="collapse"
+                      aria-labelledby="headingFour"
+                      data-parent="#accordionQA"
+                    >
+                      <div class="card-body">
+                        <i class="fa-regular fa-comment-dots"></i>Hướng dẫn làm
+                        dự án nghiên cứu khoa học và dạy cho bạn cách tiếp cận
+                        các công nghệ mới.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card wow animate__fadeInUp" data-wow-delay="0.5s">
+                    <div class="card-header" id="headingFive">
+                      <h2 class="mb-0">
+                        <button
+                          class="btn btn-link btn-block text-left collapsed"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapseFive"
+                          aria-expanded="false"
+                          aria-controls="collapseFive"
+                        >
+                          Nếu chưa có kiến thức về lập trình thì có thể tham gia
+                          CLB không?
+                          <span class="icon"></span>
+                        </button>
+                      </h2>
+                    </div>
+                    <div
+                      id="collapseFive"
+                      class="collapse"
+                      aria-labelledby="headingFive"
+                      data-parent="#accordionQA"
+                    >
+                      <div class="card-body">
+                        <i class="fa-regular fa-comment-dots"></i>Bạn cần có các
+                        kiến thức cơ bản về lập trình để trở thành một thành
+                        viên của CLB.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card wow animate__fadeInUp" data-wow-delay="0.6s">
+                    <div class="card-header" id="headingSix">
+                      <h2 class="mb-0">
+                        <button
+                          class="btn btn-link btn-block text-left collapsed"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapseSix"
+                          aria-expanded="false"
+                          aria-controls="collapseSix"
+                        >
+                          Tham gia CLB ngoài học tập còn có hoạt động gì khác
+                          không?
+                          <span class="icon"></span>
+                        </button>
+                      </h2>
+                    </div>
+                    <div
+                      id="collapseSix"
+                      class="collapse"
+                      aria-labelledby="headingSix"
+                      data-parent="#accordionQA"
+                    >
+                      <div class="card-body">
+                        <i class="fa-regular fa-comment-dots"></i>Các hoạt động
+                        ngoại khóa như seminar, camping hay teambuilding.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card wow animate__fadeInUp" data-wow-delay="0.7s">
+                    <div class="card-header" id="headingSeven">
+                      <h2 class="mb-0">
+                        <button
+                          class="btn btn-link btn-block text-left collapsed"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapseSeven"
+                          aria-expanded="false"
+                          aria-controls="collapseSeven"
+                        >
+                          Có được tham gia nhiều CLB không?
+                          <span class="icon"></span>
+                        </button>
+                      </h2>
+                    </div>
+                    <div
+                      id="collapseSeven"
+                      class="collapse"
+                      aria-labelledby="headingSeven"
+                      data-parent="#accordionQA"
+                    >
+                      <div class="card-body">
+                        <i class="fa-regular fa-comment-dots"></i>Điều đó tùy
+                        thuộc vào bạn.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card wow animate__fadeInUp" data-wow-delay="0.8s">
+                    <div class="card-header" id="headingEight">
+                      <h2 class="mb-0">
+                        <button
+                          class="btn btn-link btn-block text-left collapsed"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapseEight"
+                          aria-expanded="false"
+                          aria-controls="collapseEight"
+                        >
+                          Hình thức tuyển thành viên CLB?
+                          <span class="icon"></span>
+                        </button>
+                      </h2>
+                    </div>
+                    <div
+                      id="collapseEight"
+                      class="collapse"
+                      aria-labelledby="headingEight"
+                      data-parent="#accordionQA"
+                    >
+                      <div class="card-body">
+                        <i class="fa-regular fa-comment-dots"></i>Bạn sẽ đăng ký
+                        thông qua Form ở trang web chính thức của CLB, sau khi
+                        vượt qua vòng nộp hồ sơ sẽ là vòng kiểm tra và vòng
+                        phỏng vấn trực tiếp.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card wow animate__fadeInUp" data-wow-delay="0.9s">
+                    <div class="card-header" id="headingNine">
+                      <h2 class="mb-0">
+                        <button
+                          class="btn btn-link btn-block text-left collapsed"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapseNine"
+                          aria-expanded="false"
+                          aria-controls="collapseNine"
+                        >
+                          Nhận được quyền lợi gì khi tham gia vào CLB?
+                          <span class="icon"></span>
+                        </button>
+                      </h2>
+                    </div>
+                    <div
+                      id="collapseNine"
+                      class="collapse"
+                      aria-labelledby="headingNine"
+                      data-parent="#accordionQA"
+                    >
+                      <div class="card-body">
+                        <i class="fa-regular fa-comment-dots"></i>Học hỏi kiến
+                        thức mới, thực hành kỹ năng lập trình, mở rộng mạng lưới
+                        quan hệ, cơ hội thực tập và việc làm.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card wow animate__fadeInUp" data-wow-delay="1s">
+                    <div class="card-header" id="headingTen">
+                      <h2 class="mb-0">
+                        <button
+                          class="btn btn-link btn-block text-left collapsed"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapseTen"
+                          aria-expanded="false"
+                          aria-controls="collapseTen"
+                        >
+                          Câu lạc bộ có các hoạt động gì?
+                          <span class="icon"></span>
+                        </button>
+                      </h2>
+                    </div>
+                    <div
+                      id="collapseTen"
+                      class="collapse"
+                      aria-labelledby="headingTen"
+                      data-parent="#accordionQA"
+                    >
+                      <div class="card-body">
+                        <i class="fa-regular fa-comment-dots"></i>Các buổi
+                        workshop, seminar, hackathon, các dự án nhóm, buổi gặp
+                        mặt, các cuộc thi lập trình.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Start Q&A -->
 
     <!-- Start button components -->
     <!-- Start button to top -->

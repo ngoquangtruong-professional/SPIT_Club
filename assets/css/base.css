@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
 /* Start keyframe animation */
 @keyframes swipeInRight {
@@ -95,7 +95,6 @@ body {
   font-size: 18px;
   color: #ffffff;
   scroll-behavior: smooth !important;
-
 }
 
 a {
@@ -182,13 +181,15 @@ a:hover {
   height: 100%;
 }
 
-.menu .menu-logo, .navigation .navigation-logo {
+.menu .menu-logo,
+.navigation .navigation-logo {
   display: flex;
   align-items: center;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.menu .menu-logo:hover, .navigation .navigation-logo:hover {
+.menu .menu-logo:hover,
+.navigation .navigation-logo:hover {
   transform: scale(1.05);
   color: #ffffd3;
 }
@@ -282,7 +283,8 @@ a:hover {
   background-clip: text;
 }
 
-.menu .navigation .navigation-item.active:hover, .menu.fixed .navigation .navigation-item.active:hover {
+.menu .navigation .navigation-item.active:hover,
+.menu.fixed .navigation .navigation-item.active:hover {
   transform: none;
 }
 
@@ -335,10 +337,10 @@ a:hover {
     width: 300px;
     height: 100vh;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px -10px,
-    rgba(0, 0, 0, 0.5) 0px 30px 60px -20px,
-    rgba(0, 0, 0, 0.4) 0px 60px 120px -40px,
-    rgba(0, 0, 0, 0.7) 0px 80px 160px -60px,
-    rgba(255, 255, 255, 0.15) 0px -2px 6px 0px inset;
+      rgba(0, 0, 0, 0.5) 0px 30px 60px -20px,
+      rgba(0, 0, 0, 0.4) 0px 60px 120px -40px,
+      rgba(0, 0, 0, 0.7) 0px 80px 160px -60px,
+      rgba(255, 255, 255, 0.15) 0px -2px 6px 0px inset;
     background-color: #ffffff;
     z-index: 2;
   }
@@ -479,13 +481,11 @@ a:hover {
   margin-left: 15px;
 }
 
-.link-button:hover {
-  
-}
 /* End link button */
 
 /* Start button components */
-.top-button, .bottom-button {
+.top-button,
+.bottom-button {
   display: none;
   position: fixed;
   bottom: 35px;
@@ -510,17 +510,20 @@ a:hover {
   display: flex;
 }
 
-.top-button:focus, .bottom-button:focus {
+.top-button:focus,
+.bottom-button:focus {
   outline: 0;
 }
 
-.top-button:hover, .bottom-button:hover {
+.top-button:hover,
+.bottom-button:hover {
   transform: scale(1.1);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   background-color: #555;
 }
 
-.top-button::before, .bottom-button::before {
+.top-button::before,
+.bottom-button::before {
   content: "";
   position: absolute;
   width: 120%;
@@ -533,12 +536,14 @@ a:hover {
   border-radius: 50%;
 }
 
-.top-button:hover::before, .bottom-button:hover::before {
+.top-button:hover::before,
+.bottom-button:hover::before {
   transform: scale(1);
 }
 /* Start button components responsive */
 @media screen and (max-width: 1199.99px) {
-  .top-button, .bottom-button {
+  .top-button,
+  .bottom-button {
     height: 90px;
     width: 90px;
     font-size: 24px;
@@ -548,7 +553,8 @@ a:hover {
 }
 
 @media screen and (max-width: 991.99px) {
-  .top-button, .bottom-button {
+  .top-button,
+  .bottom-button {
     height: 80px;
     width: 80px;
     font-size: 22px;
@@ -558,7 +564,8 @@ a:hover {
 }
 
 @media screen and (max-width: 767.99px) {
-  .top-button, .bottom-button {
+  .top-button,
+  .bottom-button {
     height: 70px;
     width: 70px;
     font-size: 20px;
@@ -568,7 +575,8 @@ a:hover {
 }
 
 @media screen and (max-width: 575.99px) {
-  .top-button, .bottom-button {
+  .top-button,
+  .bottom-button {
     height: 60px;
     width: 60px;
     font-size: 18px;
@@ -578,8 +586,3 @@ a:hover {
 }
 /* End button components responsive*/
 /* End button components */
-
-
-
-
-
