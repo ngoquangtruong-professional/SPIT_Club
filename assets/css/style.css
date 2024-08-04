@@ -438,7 +438,7 @@
 /* Start achievement responsive */
 @media screen and (max-width: 1199.99px) {
   .achievement .achievement-item img {
-      width: 300px;
+    width: 300px;
   }
 }
 
@@ -447,7 +447,7 @@
     font-size: 33px;
   }
   .achievement .achievement-item img {
-      width: 250px;
+    width: 250px;
   }
 }
 
@@ -462,22 +462,22 @@
     padding-bottom: 15px;
   }
   .achievement .achievement-item {
-      background: transparent;
-      text-align: center;
-      margin-left: 105px;
+    background: transparent;
+    text-align: center;
+    margin-left: 75px;
   }
   .achievement .achievement-item img {
     width: 300px;
-      aspect-ratio: 6 / 4;
+    aspect-ratio: 6 / 4;
   }
   .achievement .inner-body::before {
-      left: 45px;
+    left: 30px;
   }
   .achievement .circle {
-      left: 30px;
+    left: 15px;
   }
   .col-6.hidden-responsive {
-      display: none;
+    display: none;
   }
 }
 @media screen and (max-width: 575.99px) {
@@ -498,18 +498,18 @@
     left: calc(50% - 3.75px);
   }
   .achievement .inner-body::before {
-      left: 30px;
+    left: 15px;
   }
   .achievement .circle {
-      left: 22.5px;
+    left: 7.5px;
   }
   .achievement .achievement-item {
-      margin-left: 75px;
+    margin-left: 45px;
   }
   .achievement .achievement-item img {
-      width: 250px;
-      aspect-ratio: 1 / 1;
-}
+    width: 250px;
+    aspect-ratio: 1 / 1;
+  }
 }
 /* End achievement responsive */
 /* End achievement */
@@ -628,6 +628,9 @@
 }
 /* Start Q&A responsive */
 @media (max-width: 767.99px) {
+  .question-answer {
+    padding: 0;
+  }
   .question-answer .qa-head {
     padding: 20px;
     border-radius: 0;
@@ -664,9 +667,7 @@
 }
 
 @media (max-width: 575.99px) {
-  .question-answer {
-    padding: 60px 0;
-  }
+  
   .question-answer .qa-head {
     padding: 15px;
   }
