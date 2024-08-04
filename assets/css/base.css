@@ -569,7 +569,8 @@ a:hover {
 }
 
 .footer .footer-page .inner-body a.active,
-.footer .footer-page .inner-body a:hover,.footer .footer-page-md .inner-body a.active,
+.footer .footer-page .inner-body a:hover,
+.footer .footer-page-md .inner-body a.active,
 .footer .footer-page-md .inner-body a:hover {
   color: #ffa500;
 }
