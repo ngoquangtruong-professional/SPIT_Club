@@ -57,13 +57,13 @@
 
 .swipeInRight {
   animation-name: swipeInRight;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-fill-mode: both;
 }
 
 .swipeOutRight {
   animation-name: swipeOutRight;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-fill-mode: both;
 }
 
@@ -71,13 +71,13 @@
   display: block !important;
   opacity: 1;
   visibility: visible;
-  transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
 
 .hide {
   opacity: 0;
   visibility: hidden;
-  transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
   display: none !important;
 }
 
@@ -91,10 +91,7 @@
 
 /* Start global styles */
 body {
-  font-family: var(--fontTextOne);
   font-size: 18px;
-  color: #ffffff;
-  scroll-behavior: smooth !important;
 }
 
 a {
