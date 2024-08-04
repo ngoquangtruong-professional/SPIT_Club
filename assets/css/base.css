@@ -766,6 +766,15 @@ a:hover {
   .footer .inner-head p {
     font-size: 14px;
   }
+  .footer .contact-box {
+    margin-bottom: 7.5px;
+  }
+  .footer .contact-box:last-child {
+    margin-bottom: 0;
+  }
+  .footer .organization.two {
+    margin-bottom: 0;
+  }
 }
 /* End footer responsive */
 /* End footer */
