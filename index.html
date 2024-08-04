@@ -97,11 +97,11 @@
     <!-- Start header -->
     <header class="header">
       <div class="header-contain">
-        <div class="header-welcome">
+        <div class="header-welcome" id="welcome">
           <div class="container-md">
             <div class="header-content">
               <h1
-                class="header-title wow animate__bounceIn"
+                class="header-title wow animate__tada"
                 data-wow-duration="2s"
               >
                 Hello World, We are SPIT!
@@ -166,14 +166,14 @@
               </div>
               <div class="content-footer">
                 <p class="overview-description text-justify">
-                  <strong>Câu lạc bộ Hỗ trợ lập trình (SPIT) </strong>Trường Đại
-                  học Khoa học, Là tổ chức của sinh viên trường Đại học Khoa học
-                  có kết quả học tập các môn lập trình cao trực thuộc Hội sinh
-                  viên Trường và LCĐ khoa Công nghệ thông tin Với phương châm
-                  hoạt động "Chia sẻ để cùng nhau phát triển", câu lạc bộ là nơi
-                  giao lưu, đào tạo các môn lập trình và các môn học trong
-                  trường, tạo điều kiện để sinh viên có môi trường học tập năng
-                  động sáng tạo.
+                  <strong>Câu lạc bộ Hỗ trợ lập trình (SPIT) </strong>trường Đại
+                  học Khoa Học là tổ chức của sinh viên trường Đại học Khoa học
+                  có kết quả học tập các môn lập trình cao, trực thuộc Hội sinh
+                  viên trường và liên chi đoàn khoa Công Nghệ Thông Tin với
+                  phương châm hoạt động "Chia sẻ để cùng nhau phát triển". Câu
+                  lạc bộ là nơi giao lưu, đào tạo các môn lập trình và các môn
+                  học trong trường, tạo điều kiện để sinh viên có môi trường học
+                  tập năng động sáng tạo.
                 </p>
                 <p class="overview-slogan">
                   <strong>Slogan: </strong>“Lập trình không khó, vì có SPIT”.
@@ -187,7 +187,7 @@
     <!-- End overview -->
 
     <!-- Start activities -->
-    <section class="activities">
+    <section class="activities" id="activities">
       <div class="container-md">
         <div class="row align-items-center justify-content-between">
           <div class="col-lg-6">
@@ -232,32 +232,49 @@
     </section>
     <!-- End activities -->
 
-     <!-- Start achievement -->
-     <div class="home-achi">
+    <!-- Start achievement -->
+    <div class="achievement" id="achievement">
       <div class="container-md">
         <div class="inner-head">
-          <h1 class="inner-head-title">THÀNH TÍCH</h1>
-          <p class="inner-head-desc">Câu lạc bộ SPIT tự hào với nhiều thành tích nổi bật trong các cuộc thi lập trình, khẳng định được vị thế và tinh thần sáng tạo, học tập không ngừng nghỉ của các thành viên.</p>
+          <h1 class="achievement-title">THÀNH TÍCH</h1>
+          <p class="achievement-desc">
+            Câu lạc bộ SPIT tự hào với nhiều thành tích nổi bật trong các cuộc
+            thi lập trình, khẳng định được vị thế và tinh thần sáng tạo, học tập
+            không ngừng nghỉ của các thành viên.
+          </p>
         </div>
-
         <div class="inner-body">
           <div class="inner-body-element">
             <div class="inner-item">
-              <div class="item-image"><img src="./assets/images/index/Achievement/thanh_tich_1.png" alt=""></div>
-              <div class="item-desc">Đội tuyển Khoa Công Nghệ Thông Tin đạt giải Nhất, Nhì cuộc thi ICPC khu vực Miền Trung năm 2023</div>
+              <div class="item-image">
+                <img
+                  src="./assets/images/index/Achievement/thanh_tich_1.png"
+                  alt=""
+                />
+              </div>
+              <div class="item-desc">
+                Đội tuyển Khoa Công Nghệ Thông Tin đạt giải Nhất, Nhì cuộc thi
+                ICPC khu vực Miền Trung năm 2023
+              </div>
             </div>
             <div class="position-absolute right-side">
               <i class="fa-solid fa-circle"></i>
             </div>
           </div>
-          <div class="inner-body-element hidden-responsive">
-          </div>
-          <div class="inner-body-element hidden-responsive">
-          </div>
+          <div class="inner-body-element hidden-responsive"></div>
+          <div class="inner-body-element hidden-responsive"></div>
           <div class="inner-body-element">
             <div class="inner-item">
-              <div class="item-image"><img src="./assets/images/index/Achievement/thanh_tich_2.png" alt=""></div>
-              <div class="item-desc">CLB Hỗ trợ Lập trình cùng với cuộc thi Olympic Tin học Sinh viên Việt Nam lần thứ 32 - Procon Vietnam - ICPC Asia Hue City 2023 </div>
+              <div class="item-image">
+                <img
+                  src="./assets/images/index/Achievement/thanh_tich_2.png"
+                  alt=""
+                />
+              </div>
+              <div class="item-desc">
+                CLB Hỗ trợ Lập trình cùng với cuộc thi Olympic Tin học Sinh viên
+                Việt Nam lần thứ 32 - Procon Vietnam - ICPC Asia Hue City 2023
+              </div>
             </div>
             <div class="position-absolute left-side">
               <i class="fa-solid fa-circle"></i>
@@ -265,22 +282,30 @@
           </div>
           <div class="inner-body-element">
             <div class="inner-item">
-              <div class="item-image"><img src="./assets/images/index/Achievement/thanh_tich_3.png" alt=""></div>
-              <div class="item-desc">Đội thi HUSC-Newbie đến từ CLB Hỗ trợ Lập trình đạt Huy chương Bạc (bảng Warrior) tại cuộc thi lập trình Da Nang Code League năm 2024</div>
+              <div class="item-image">
+                <img
+                  src="./assets/images/index/Achievement/thanh_tich_3.png"
+                  alt=""
+                />
+              </div>
+              <div class="item-desc">
+                Đội thi HUSC-Newbie đến từ CLB Hỗ trợ Lập trình đạt Huy chương
+                Bạc (bảng Warrior) tại cuộc thi lập trình Da Nang Code League
+                năm 2024
+              </div>
             </div>
             <div class="position-absolute right-side">
               <i class="fa-solid fa-circle"></i>
             </div>
           </div>
-          <div class="inner-body-element hidden-responsive">
-          </div>
+          <div class="inner-body-element hidden-responsive"></div>
         </div>
       </div>
     </div>
     <!-- End achievement -->
 
     <!-- Start Q&A -->
-    <section class="question-answer">
+    <section class="question-answer" id="qa">
       <div class="container-md wow animate__fadeInUp">
         <div class="row">
           <div class="col-12">
@@ -374,8 +399,9 @@
                       data-parent="#accordionQA"
                     >
                       <div class="card-body">
-                        <i class="fa-regular fa-comment-dots"></i>Vì CLB năm nay
-                        sẽ giới hạn lại số lượng thành viên.
+                        <i class="fa-regular fa-comment-dots"></i>Vì điều này
+                        giúp CLB xây dựng nền tảng vững chắc, duy trì nguồn nhân
+                        lực ổn định và phát triển lâu dài.
                       </div>
                     </div>
                   </div>
@@ -494,8 +520,10 @@
                       data-parent="#accordionQA"
                     >
                       <div class="card-body">
-                        <i class="fa-regular fa-comment-dots"></i>Điều đó tùy
-                        thuộc vào bạn.
+                        <i class="fa-regular fa-comment-dots"></i>Việc tham gia
+                        CLB sẽ giúp cho bạn học hỏi được nhiều kỹ năng mềm và
+                        tạo nhiều nền tảng kiến thức nên CLB khuyến khích bạn
+                        nên tham gia nhiều hoạt động và CLB hơn
                       </div>
                     </div>
                   </div>
@@ -608,77 +636,108 @@
               <div class="footer-left">
                 <div class="row justify-content-lg-around">
                   <div class="footer-contact inner-box col-sm-6">
-                    <div class="inner-head">
-                      <img src="./assets/images/Footer/SPIT_Logo.png" alt="" />
-                      <p>
-                        TRƯỜNG ĐẠI HỌC KHOA HỌC, ĐẠI HỌC HUẾ <br /><b
-                          >CLB HỖ TRỢ LẬP TRÌNH</b
-                        >
-                      </p>
-                    </div>
-                    <div class="inner-body">
-                      <div class="contact-phone contact-box">
-                        <div class="icon">
-                          <i class="fa-solid fa-phone-volume"></i>
-                        </div>
-                        <p>0702291317 - 0934766830 - 0934094936</p>
+                    <div class="inner-wrap">
+                      <div class="inner-head">
+                        <img
+                          src="./assets/images/Footer/SPIT_Logo.png"
+                          alt=""
+                        />
+                        <p>
+                          TRƯỜNG ĐẠI HỌC KHOA HỌC, ĐẠI HỌC HUẾ
+                          <br />
+                          <b>CLB HỖ TRỢ LẬP TRÌNH</b>
+                        </p>
                       </div>
-                      <div class="contact-gmail contact-box">
-                        <div class="icon">
-                          <i class="fa-regular fa-envelope"></i>
+                      <div class="inner-body">
+                        <div class="contact-phone contact-box">
+                          <div class="icon">
+                            <i class="fa-solid fa-phone-volume"></i>
+                          </div>
+                          <p>0702291317 - 0934766830 - 0934094936</p>
                         </div>
-                        <a href="mailto:clbhtlt.ithusc@gmail.com"
-                          >clbhtlt.ithusc@gmail.com</a
-                        >
+                        <div class="contact-gmail contact-box">
+                          <div class="icon">
+                            <i class="fa-regular fa-envelope"></i>
+                          </div>
+                          <a href="mailto:clbhtlt.ithusc@gmail.com"
+                            >clbhtlt.ithusc@gmail.com</a
+                          >
+                        </div>
+                        <div class="contact-facbook contact-box">
+                          <div class="icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                          </div>
+                          <a
+                            href="https://www.facebook.com/clbhtlt.ithusc"
+                            target="_blank"
+                            rel=""
+                            >CLB Hỗ trợ Lập trình</a
+                          >
+                        </div>
+                        <div class="contact-address contact-box">
+                          <div class="icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                          </div>
+                          <p>Phòng E202, 77 Nguyễn Huệ, TP. Huế</p>
+                        </div>
                       </div>
-                      <div class="contact-facbook contact-box">
-                        <div class="icon">
-                          <i class="fa-brands fa-facebook-f"></i>
+                      <div class="footer-page-md inner-box col-sm-6 one">
+                        <div class="inner-head">
+                          <p>TRANG CHỦ</p>
                         </div>
-                        <a
-                          href="https://www.facebook.com/clbhtlt.ithusc"
-                          target="_blank"
-                          rel=""
-                          >CLB Hỗ trợ Lập trình</a
-                        >
-                      </div>
-                      <div class="contact-address contact-box">
-                        <div class="icon">
-                          <i class="fa-solid fa-location-dot"></i>
+                        <div class="inner-body">
+                          <a href="#">WELCOME</a><br />
+                          <a href="#">TỔNG QUAN</a><br />
+                          <a href="#">HOẠT ĐỘNG</a><br />
+                          <a href="#">THÀNH TÍCH</a><br />
+                          <a href="#">Q & A</a><br />
                         </div>
-                        <p>Phòng E202, 77 Nguyễn Huệ, TP. Huế</p>
                       </div>
                     </div>
                   </div>
                   <div class="footer-organization inner-box col-sm-6">
-                    <div class="inner-head">
-                      <p>TỔ CHỨC</p>
-                    </div>
-                    <div class="organization">
-                      <img
-                        src="./assets/images/Footer/Hue_University-Logo.png"
-                        alt="Logo của Đại Học Huế"
-                      />
-                      <p>
-                        Đại học Huế <br /><a
-                          href="https://hueuni.edu.vn/"
-                          target="_blank"
-                          >Hue University</a
-                        >
-                      </p>
-                    </div>
-                    <div class="organization">
-                      <img
-                        src="./assets/images/Footer/HUSC_Hue_University-Logo.png"
-                        alt="Logo của Đại Học Khoa Học, Đại Học Huế"
-                      />
-                      <p>
-                        Đại học Khoa học Huế <br /><a
-                          href="https://husc.edu.vn/"
-                          target="_blank"
-                          >Hue University Of Sciences</a
-                        >
-                      </p>
+                    <div class="inner-wrap">
+                      <div class="inner-head">
+                        <p>TỔ CHỨC</p>
+                      </div>
+                      <div class="organization">
+                        <img
+                          src="./assets/images/Footer/Hue_University-Logo.png"
+                          alt="Logo của Đại Học Huế"
+                        />
+                        <p>
+                          Đại học Huế
+                          <br />
+                          <a href="https://hueuni.edu.vn/" target="_blank"
+                            >Hue University</a
+                          >
+                        </p>
+                      </div>
+                      <br />
+                      <div class="organization">
+                        <img
+                          src="./assets/images/Footer/HUSC_Hue_University-Logo.png"
+                          alt="Logo của Đại Học Khoa Học, Đại Học Huế"
+                        />
+                        <p>
+                          Đại học Khoa học Huế
+                          <br />
+                          <a href="https://husc.edu.vn/" target="_blank"
+                            >Hue University Of Sciences</a
+                          >
+                        </p>
+                      </div>
+                      <div class="footer-page-md inner-box col-sm-6 two">
+                        <div class="inner-head">
+                          <p>TRANG KHÁC</p>
+                        </div>
+                        <div class="inner-body">
+                          <a href="#">GIỚI THIỆU</a><br />
+                          <a href="#">HOẠT ĐỘNG</a>
+                          <a href="#">TIN TỨC</a>
+                          <a href="#">TUYỂN THÀNH VIÊN</a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -688,30 +747,33 @@
               <div class="footer-right">
                 <div class="row justify-content-lg-around">
                   <div class="footer-page inner-box col-sm-6">
-                    <div class="inner-head">
-                      <p>TRANG CHỦ</p>
-                    </div>
-                    <div class="inner-body">
-                      <a href="#">WELCOME</a><br />
-                      <a href="#">TỔNG QUAN</a><br />
-                      <a href="#">HOẠT ĐỘNG</a><br />
-                      <a href="#">THÀNH TÍCH</a><br />
-                      <a href="#">Q & A</a><br />
+                    <div class="inner-wrap">
+                      <div class="inner-head">
+                        <p>TRANG CHỦ</p>
+                      </div>
+                      <div class="inner-body">
+                        <a href="#welcome">WELCOME</a><br />
+                        <a href="#overview">TỔNG QUAN</a><br />
+                        <a href="#activities">HOẠT ĐỘNG</a><br />
+                        <a href="#achievement">THÀNH TÍCH</a><br />
+                        <a href="#qa">Q & A</a><br />
+                      </div>
                     </div>
                   </div>
                   <div class="footer-page inner-box col-sm-6">
-                    <div class="inner-head">
-                      <p>TRANG KHÁC</p>
-                    </div>
-                    <div class="inner-body">
-                      <a href="#">GIỚI THIỆU</a><br />
-                      <a href="#">HOẠT ĐỘNG</a><br />
-                      <a href="#">TIN TỨC</a><br />
-                      <a href="#">TUYỂN THÀNH VIÊN</a><br />
+                    <div class="inner-wrap">
+                      <div class="inner-head">
+                        <p>TRANG KHÁC</p>
+                      </div>
+                      <div class="inner-body">
+                        <a href="#">GIỚI THIỆU</a><br />
+                        <a href="#">HOẠT ĐỘNG</a><br />
+                        <a href="#">TIN TỨC</a><br />
+                        <a href="#">TUYỂN THÀNH VIÊN</a><br />
+                      </div>
                     </div>
                   </div>
                 </div>
-               
               </div>
             </div>
           </div>
