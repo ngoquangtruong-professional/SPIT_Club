@@ -1,18 +1,3 @@
-/* Start global styles */
-body {
-  color: #ffffff;
-}
-
-a {
-  color: #ffffff;
-}
-
-a:hover {
-  color: #ffffff;
-  text-decoration: none;
-}
-/* End global styles */
-
 /* Start header */
 .header {
   background: url(../images/index/Header/Background.png);

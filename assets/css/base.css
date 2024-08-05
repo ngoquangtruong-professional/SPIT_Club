@@ -95,6 +95,7 @@
 body {
   font-family: var(--fontTextOne);
   font-size: 18px;
+  color: #ffffff;
 }
 
 a {
