@@ -73,3 +73,4 @@ document.getElementById("hideNavigation").addEventListener("click", function () 
         }, 500);
     }
 });
+

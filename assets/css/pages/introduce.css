@@ -1,0 +1,20 @@
+/* Start global styles */
+body {
+    font-family: var(--fontTextOne);
+    color: #ffffff;
+  }
+
+/* End global styles */
+
+/* Start header */
+.header {
+  background: url(../../images/pages/introduce/Header/Background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin-top: -80px;
+  width: 100%;
+}
+
+/* End header */

@@ -1,10 +1,8 @@
-window.onscroll = function () {
-    scrollFunction();
-};
+window.onscroll = debounce(scrollFunction, 100);
 
 function scrollFunction() {
-    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-    var documentHeight = document.documentElement.scrollHeight;
+    const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    const documentHeight = document.documentElement.scrollHeight;
 
     if (scrollTop > documentHeight / 2) {
         document.getElementById("bottomButton").style.display = "none";
@@ -24,7 +22,16 @@ function topFunction() {
 
 function bottomFunction() {
     window.scrollTo({
-        top: document.body.scrollHeight,
+        top: document.documentElement.scrollHeight,
         behavior: "smooth",
     });
+}
+
+function debounce(func, wait) {
+    let timeout;
+    return function (...args) {
+        const context = this;
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(context, args), wait);
+    };
 }
