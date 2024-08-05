@@ -1,6 +1,5 @@
 /* Start global styles */
 body {
-    font-family: var(--fontTextOne);
     color: #ffffff;
   }
 
@@ -15,6 +14,135 @@ body {
   height: 100vh;
   margin-top: -80px;
   width: 100%;
+  position: relative;
 }
 
+.header .header-contain {
+  height: 100%;
+}
+
+.header .header-contain .container-md {
+  height: 100%;
+  position: relative;
+}
+
+.header .header-history {
+  position: absolute;
+  bottom: 25%;
+  left: 2.5%;
+  right: 2.5%
+}
+
+.header .header-title {
+  background: linear-gradient(to right, #25B5EE, #E814DA);
+  background-clip: text;
+  color: transparent;
+  font-size: 72px;
+}
+
+.header .header-description {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 1199.99px) {
+  .header .header-title {
+    font-size: 66px;
+  }
+  .header .header-description {
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 991.99px) {
+  .header .header-title {
+    font-size: 60px;
+  }
+  .header .header-description {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 767.99px) {
+  .header .header-title {
+    font-size: 54px;
+  }
+  .header .header-description {
+    font-size: 14px;
+  }
+}
 /* End header */
+
+
+/* Start history */
+.history {
+  background: #FFE5C7;
+  height: 200vh;
+}
+
+.history .history-top {
+  height: 100vh;
+
+}
+
+.history .history-top {
+  color: #001656;
+  text-align: justify;
+}
+
+
+.history .history-bottom {
+  color: #C3EDFF;
+  height: 80vh;
+  background: #00144D;
+  position: relative;
+  text-align: justify;
+}
+
+.history .history-title {
+  padding-top: 104px;
+  font-weight: bold;
+  font-size: 48px;
+  margin-bottom: 52px;
+}
+
+.history .history-bottom .history-title {
+  text-align: center;
+}
+
+.history .history-description {
+  font-size: 24px;
+}
+
+.history-bottom::after {
+  position: absolute;
+  content: "SPIT";
+  background: linear-gradient(to bottom, #00144D 0px, #00144D 70px, #FFE5C7 70px, #FFE5C7 100%);
+  color: transparent;
+  background-clip: text;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  text-orientation: mixed;
+  font-family: "MuseoModerno", sans-serif;
+  font-size: 200px;
+  right: 0;
+  bottom: 0;
+  margin-bottom: -70px;
+  margin-right: -70px;
+}
+
+.history-bottom::before {
+  content: "SPIT";
+  background: linear-gradient(to bottom, #00144D 0px, #00144D 70px, #FFE5C7 70px, #FFE5C7 100%);
+  color: transparent;
+  background-clip: text;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-family: "MuseoModerno", sans-serif;
+  font-size: 200px;
+  left: 0;
+  top: 0;
+  margin-top: -70px;
+  margin-left: -70px;
+  position: absolute;
+}
+/* End history */
