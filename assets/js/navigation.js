@@ -28,7 +28,7 @@ document.getElementById("showNavigation").addEventListener("click", function () 
         document.getElementById("bottomButton").style.opacity = "0";
         document.getElementById("topButton").style.visibility = "hidden";
         document.getElementById("topButton").style.opacity = "0";
-        
+
         document.getElementById("showNavigation").classList.add("hide");
         document.getElementById("menuLogo").classList.add("hide");
 
@@ -72,5 +72,23 @@ document.getElementById("hideNavigation").addEventListener("click", function () 
             }
         }, 500);
     }
+});
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const navItems = document.querySelectorAll('.navigation-item');
+
+    navItems.forEach(item => {
+        item.addEventListener('click', function (event) {
+            event.preventDefault();
+            const targetUrl = this.getAttribute('href');
+
+            this.classList.add('hovered');
+
+            setTimeout(() => {
+                window.location.href = targetUrl;
+            }, 300);
+        });
+    });
 });
 
