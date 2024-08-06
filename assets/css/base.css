@@ -112,13 +112,13 @@ a:hover {
   color: #b87bfab0;
 }
 /* Start global styles responsive */
-@media screen and (max-width: 991.99px) {
+@media screen and (max-width: 991.98px) {
   body {
     font-size: 16px;
   }
 }
 
-@media screen and (max-width: 767.99px) {
+@media screen and (max-width: 767.98px) {
   body {
     font-size: 14px;
   }
@@ -294,7 +294,7 @@ a:hover {
   display: none;
 }
 /* Start menu responsive */
-@media screen and (max-width: 1199.99px) {
+@media screen and (max-width: 1199.98px) {
   .menu .menu-logo img {
     height: 40px;
     width: 40px;
@@ -311,7 +311,7 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 991.99px) {
+@media screen and (max-width: 991.98px) {
   .menu .menu-contain .navigation-item.active:hover {
     color: transparent;
   }
@@ -408,7 +408,7 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 767.99px) {
+@media screen and (max-width: 767.98px) {
   .menu {
     height: 60px;
   }
@@ -604,7 +604,7 @@ a:hover {
 }
 
 /* Start footer responsive */
-@media screen and (max-width: 1199.99px) {
+@media screen and (max-width: 1199.98px) {
   .footer .inner-head img {
     width: 33px;
     height: 33px;
@@ -648,7 +648,7 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 991.99px) {
+@media screen and (max-width: 991.98px) {
   .footer .footer-page {
     display: none;
   }
@@ -707,7 +707,7 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 767.99px) {
+@media screen and (max-width: 767.98px) {
   .footer .inner-head img {
     width: 33px;
     height: 33px;
@@ -755,7 +755,7 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 575.99px) {
+@media screen and (max-width: 575.98px) {
   .footer .inner-wrap {
     width: auto;
     margin: 0;
@@ -860,7 +860,7 @@ a:hover {
   transform: scale(1);
 }
 /* Start button components responsive */
-@media screen and (max-width: 1199.99px) {
+@media screen and (max-width: 1199.98px) {
   .top-button,
   .bottom-button {
     height: 90px;
@@ -871,7 +871,7 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 991.99px) {
+@media screen and (max-width: 991.98px) {
   .top-button,
   .bottom-button {
     height: 80px;
@@ -882,7 +882,7 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 767.99px) {
+@media screen and (max-width: 767.98px) {
   .top-button,
   .bottom-button {
     height: 70px;
@@ -893,7 +893,7 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 575.99px) {
+@media screen and (max-width: 575.98px) {
   .top-button,
   .bottom-button {
     height: 60px;
