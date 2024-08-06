@@ -282,13 +282,6 @@ body {
 }
 
 @media (max-width: 767.98px) {
-  .history {
-    height: 150vh;
-  }
-  .history .history-bottom,
-  .history .history-top {
-    height: 75vh;
-  }
   .history .history-title {
     font-size: 28px;
     padding-top: 55px;
@@ -304,11 +297,11 @@ body {
 
 @media (max-width: 575.98px) {
   .history {
-    height: 100vh;
+    height: 150vh;
   }
-  .history .history-top,
-  .history .history-bottom {
-    height: 50vh;
+  .history .history-bottom,
+  .history .history-top {
+    height: 75vh;
   }
   .history .history-title {
     font-size: 24px;
@@ -321,8 +314,12 @@ body {
   .history .history-bottom .history-title {
     display: none;
   }
+  .history .history-bottom {
+    position: relative;
+  }
   .history .history-bottom .history-description {
-    margin-top: 116px;
+    position: absolute;
+    top: 37.5vh
   }
   .history .col-lg-5 img {
     display: none;
@@ -338,7 +335,8 @@ body {
   }
   .history .col-sm-12 img {
     z-index: 1;
-    max-width: 300px;
+    width: 350px;
+    aspect-ratio: 4 / 3;
     position: absolute;
   }
 }
