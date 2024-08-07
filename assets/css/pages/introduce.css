@@ -73,12 +73,12 @@
 /* Start history */
 .history {
   background: #ffe5c7;
-  height: 200vh;
+  height: 1500px;
   overflow-x: hidden;
 }
 
 .history .history-top {
-  height: 100vh;
+  height: 750px;
   color: #001656;
   text-align: justify;
 }
@@ -90,15 +90,14 @@
 }
 
 .history .col-lg-5 img {
-  width: 60%;
-  height: 80%;
+  width: 300px;
   aspect-ratio: 4 / 3;
   border-radius: 8px;
 }
 
 .history .history-bottom {
   color: #c3edff;
-  height: 80vh;
+  height: 600px;
   background: #00144d;
   position: relative;
   text-align: justify;
@@ -167,17 +166,12 @@
     right: -55px;
     bottom: -55px;
   }
-
   .history-bottom::before {
     left: -55px;
     top: -55px;
   }
 }
 @media screen and (max-width: 1199.98px) {
-  .history .col-lg-5 img {
-    width: 80%;
-    height: 60%;
-  }
   .history-bottom::after,
   .history-bottom::before {
     font-size: 120px;
@@ -211,6 +205,9 @@
 }
 
 @media screen and (max-width: 991.98px) {
+  .history {
+    height: 1000px;
+  }
   .history .history-title {
     font-size: 32px;
     padding-top: 70px;
@@ -226,9 +223,12 @@
     color: #001656;
     text-align: justify;
   }
+  .history .history-top {
+    height: 500px;
+  }
   .history .history-bottom {
     color: #c3edff;
-    height: 100vh;
+    height: 500px;
     text-align: justify;
   }
   .history-top {
@@ -275,7 +275,7 @@
     text-align: center;
   }
   .history .col-lg-5 img {
-    width: 250px;
+    width: 300px;
     aspect-ratio: 16 / 9;
     margin-bottom: 16px;
   }
@@ -290,18 +290,15 @@
   .history .history-description {
     font-size: 16px;
   }
-  .history .col-lg-5 img {
-    width: 200px;
-  }
 }
 
 @media (max-width: 575.98px) {
   .history {
-    height: 100vh;
+    height: 750px;
   }
   .history .history-bottom,
   .history .history-top {
-    height: 50vh;
+    height: 375px;
   }
   .history .history-title {
     font-size: 24px;
@@ -319,7 +316,7 @@
   }
   .history .history-bottom .history-description {
     position: absolute;
-    top: 25vh;
+    top: 187.5px;
     padding-right: inherit;
   }
   .history .col-lg-5 img {
@@ -336,10 +333,113 @@
   }
   .history .col-sm-12 img {
     z-index: 1;
-    width: 250px;
+    width: 300px;
     aspect-ratio: 4 / 3;
     position: absolute;
   }
 }
 /* End history responsive */
 /* End history */
+
+/* Start vision */
+.vision {
+  padding: 80px 0;
+  background: #D9D9D9;
+}
+.vision .water-drop {
+  background: #f0f0f0;
+  position: relative;
+  width: 450px;
+  height: 450px;
+  box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
+  25px 35px 20px rgba(0, 0, 0, 0.05),
+  25px 30px 30px rgba(0, 0, 0, 0.05),
+  inset -20px -20px 25px rgba(255, 255, 255, 0.9);
+  border-radius: 47% 53% 70% 30% / 30% 43% 57% 70% ;
+  transition: 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vision .water-drop:hover {
+  border-radius: 50%;
+}
+
+.vision .water-drop::before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left : 85px;
+  width: 35px;
+  height: 35px;
+  background: #ffffff;
+  border-radius: 50%;
+  opacity: 0.9;
+}
+
+.vision .water-drop::after {
+  content: "";
+  position: absolute;
+  top: 90px;
+  left : 110px;
+  width: 15px;
+  height: 15px;
+  background: #ffffff;
+  border-radius: 50%;
+  opacity: 0.9;
+}
+
+.vision .water-drop .content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 40px;
+  gap: 15px
+}
+
+.vision .water-drop .content h2 {
+  color: #307AE8;
+  position: relative;
+  padding: 15px;
+  border-radius: 30px;
+  background: #f1f1f1;
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1),
+  inset -2px -5px 30px rgba(255, 255, 255, 1),
+  15px 15px 10px rgba(0, 0, 0, 0.05),
+  15px 10px 15px rgba(0, 0, 0, 0.025);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vision .water-drop .content p {
+  color: #003C6C;
+  position: relative;
+  margin-bottom: 0;
+}
+
+.vision .water-drop .content p::before {
+  content: "\f10d";
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #9A9A9A;
+  left: 0;
+  top: -30px;
+  font-size: 24px;
+}
+
+.vision .water-drop .content p::after {
+  content: "\f10e";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  color: #9A9A9A;
+  right: 70px;
+  bottom: -20px;
+  font-size: 24px;
+}
