@@ -500,23 +500,6 @@
 }
 @media screen and (max-width: 991.98px) {
   .purpose {
-    padding: 80px 0;
-  }
-  .purpose .purpose-images .image-box {
-    width: 150px;
-    height: 400px;
-  }
-  .purpose .purpose-images .image-box:nth-child(odd) {
-    margin-top: 0;
-  }
-  .purpose .purpose-content .purpose-title {
-    font-size: 34px;
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (max-width: 767.98px) {
-  .purpose {
     padding: 60px 0;
   }
   .purpose .purpose-content .purpose-title {
@@ -540,10 +523,75 @@
   }
 }
 
-@media screen and (max-width: 575.98px) {
+@media screen and (max-width: 767.98px) {
+  .purpose {
+    padding: 60px 0;
+  }
+  .purpose .purpose-content .purpose-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
   .purpose .purpose-images .image-box {
-    width: 375px;
-    height: 75px;
+    padding: 0;
+  }
+  .purpose .purpose-images .image-box img {
+    border-radius: 0;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+  .purpose .purpose-images {
+    position: relative;
+    height: 400px;
+  }
+  .purpose .purpose-images .image-box:first-child {
+    display: none;
+  } 
+  .purpose .purpose-images .image-box:nth-child(2) {
+    border-radius: 0;
+    position: absolute;
+    width: 350px;
+    height: 200px;
+    margin: 0;
+    z-index: 1;
+  }
+  .purpose .purpose-images .image-box:last-child {
+    border-radius: 0;
+    position: absolute;
+    width: 250px;
+    height: 150px;
+    margin: 0;
+    z-index: 2;
+  }
+  .purpose .purpose-images .image-box:nth-child(2) {
+    top: 65%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+  }
+  .purpose .purpose-images .image-box:last-child {
+    bottom: 35%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .purpose .purpose-images {
+    height: 350px;
+  }
+  .purpose .purpose-images .image-box {
+    width: 300px;
+  }
+  .purpose .purpose-images .image-box img {
+    border-radius: 60px;
+  }
+  .purpose .purpose-images .image-box:nth-child(2) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .purpose .purpose-images .image-box:last-child {
+    display: none;
   }
 }
 /* End purpose responsive */
