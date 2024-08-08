@@ -746,6 +746,7 @@
 
 .structure .inner-body .inner-description {
   color: var(--color);
+  text-align: center
 }
 
 .structure .inner-body .inner-box {
