@@ -441,6 +441,228 @@
   bottom: -20px;
   font-size: 24px;
 }
+/* End vision */
+
+/* Start purpose */
+.purpose {
+  padding: 100px 0;
+}
+
+.purpose .purpose-content {
+  color: #001656;
+}
+
+.purpose .purpose-content .purpose-description {
+  text-align: justify;
+}
+
+.purpose .purpose-content .purpose-title {
+  margin-bottom: 40px;
+  font-size: 42px;
+}
+
+.purpose .purpose-content a {
+  color: #0042FF;
+}
+
+.purpose .purpose-images .image-box {
+  width: 150px;
+  height: 400px;
+}
+
+.purpose .purpose-images .image-box:nth-child(even) {
+  margin-top: 0;
+}
+
+.purpose .purpose-images .image-box:nth-child(odd) {
+  margin-top: 60px;
+}
+
+.purpose .purpose-images .image-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 90px;
+  object-fit: cover;
+}
+
+/* Start purpose responsive */
+@media screen and (max-width: 1199.98px) {
+  .purpose .purpose-content .purpose-title {
+    font-size: 38px;
+  }
+  .purpose .purpose-images .image-box {
+    width: 125px;
+    height: 375px;
+  }
+  .purpose .purpose-images .image-box:nth-child(odd) {
+    margin-top: 120px;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .purpose {
+    padding: 80px 0;
+  }
+  .purpose .purpose-images .image-box {
+    width: 150px;
+    height: 400px;
+  }
+  .purpose .purpose-images .image-box:nth-child(odd) {
+    margin-top: 0;
+  }
+  .purpose .purpose-content .purpose-title {
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .purpose {
+    padding: 60px 0;
+  }
+  .purpose .purpose-content .purpose-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .purpose .purpose-images .image-box {
+    padding: 0 15px;
+    width: 400px;
+    height: 100px;
+  }
+  .purpose .purpose-images .image-box:first-child {
+    margin-top: 30px;
+  }
+  .purpose .purpose-images .image-box:nth-child(2) {
+    margin-top: 30px;
+  }
+  .purpose .purpose-images .image-box:last-child {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .purpose .purpose-images .image-box {
+    width: 375px;
+    height: 75px;
+  }
+}
+/* End purpose responsive */
+/* End purpose */
+
+/* Start time */
+.time {
+  background: #D4D8ED;
+  padding: 100px 0;
+}
+
+.time .time-head {
+  color: #0045B3;
+}
+
+.time .time-head .time-title {
+  padding-bottom: 7.5px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #0045B3;
+  font-size: 42px;
+}
+
+.time .time-body {
+  margin-top: 30px;
+  color: #192335;
+}
+
+.time .time-body .time-content {
+  margin-bottom: 90px;
+}
+
+.time .time-images {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.time .time-images .image-contain {
+  width: 500px;
+  height: 250px;
+}
+
+.time .time-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 5px solid #9A7AA3;
+  border-radius: 20px;
+}
+
+/* Start time responsive */
+@media screen and (max-width: 1199.98px) {
+  .time .time-head .time-title {
+    font-size: 38px;
+  }
+  .time .time-body .time-content {
+    margin-bottom: 75px;
+  }
+  .time .time-images .image-contain {
+    width: 400px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .time {
+    padding: 80px 0;
+  }
+  .time .time-head .time-title {
+    font-size: 34px;
+    margin-bottom: 15px;
+  }
+  .time .time-body .time-content {
+    margin-bottom: 60px;
+  }
+  .time .time-images .image-contain {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .time {
+    padding: 60px 0;
+  }
+  .time .time-head .time-title {
+    font-size: 30px;
+    text-align: center;
+  }
+  .time .time-head .time-description {
+    text-align: center;
+  }
+  .time .time-images {
+    display: block;
+  }
+  .time .time-images .image-contain {
+    width: 400px;
+    height: 133px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .time {
+    padding: 40px 0;
+  }
+  .time .time-body .time-content {
+    margin-bottom: 45px;
+  }
+  .time .time-images .image-contain {
+    width: 300px;
+    height: 100px;
+    margin-top: 15px;
+  }
+}
+/* End time responsive */
+/* End time */
 
 /* Start structure */
 .structure {
@@ -610,6 +832,7 @@
   transition: opacity 0.3s ease-in-out;
 }
 
+/* Start structure responsive */
 @media screen and (max-width: 1199.98px) {
   .structure .inner-body .homeroom-board {
     margin-bottom: 60px;
@@ -681,4 +904,5 @@
     display: none;
   }
 }
+/* End structure responsive */
 /* End structure */
