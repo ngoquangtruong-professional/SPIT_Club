@@ -4,7 +4,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 800px;
   margin-top: -80px;
   width: 100%;
   position: relative;
@@ -90,7 +90,7 @@
 }
 
 .history .col-lg-5 img {
-  width: 300px;
+  width: 290px;
   aspect-ratio: 4 / 3;
   border-radius: 8px;
 }
@@ -275,7 +275,7 @@
     text-align: center;
   }
   .history .col-lg-5 img {
-    width: 300px;
+    width: 290px;
     aspect-ratio: 16 / 9;
     margin-bottom: 16px;
   }
@@ -333,7 +333,7 @@
   }
   .history .col-sm-12 img {
     z-index: 1;
-    width: 300px;
+    width: 290px;
     aspect-ratio: 4 / 3;
     position: absolute;
   }
@@ -343,9 +343,9 @@
 
 /* Start vision */
 .vision {
-  overflow-x: hidden;
   padding: 80px 0;
   background: #d9d9d9;
+  overflow-x: hidden;
 }
 
 .vision .water-drop-container {
@@ -387,24 +387,6 @@
   height: 470px;
   z-index: 1;
   animation-delay: 3s;
-}
-
-@keyframes move {
-  0% {
-    transform: translate(0, 0) scale(1);
-  }
-  25% {
-    transform: translate(-5px, 5px) scale(1.05);
-  }
-  50% {
-    transform: translate(5px, 5px) scale(1);
-  }
-  75% {
-    transform: translate(-5px, -5px) scale(0.95);
-  }
-  100% {
-    transform: translate(0, 0) scale(1);
-  }
 }
 
 .vision .water-drop::before {
@@ -506,6 +488,22 @@
   color: #003c6c;
 }
 
+.vision .content-md p::before {
+  content: "\f10d";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #9a9a9a;
+  font-size: 20px;
+}
+
+.vision .content-md p::after {
+  content: "\f10e";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #9a9a9a;
+  font-size: 20px;
+}
+
 .vision .content-container {
   position: relative;
   color: #192335;
@@ -519,13 +517,13 @@
 
 .vision .content-container .body-image {
   width: 100%;
-  height: 70px;
+  height: 60px;
   text-align: center;
   margin-top: 40px;
 }
 
 .vision .content-container .body-image img {
-  width: 550px;
+  width: 500px;
   height: 100%;
   border-radius: 10px;
   object-fit: cover;
@@ -557,7 +555,7 @@
     padding: 20px;
   }
   .vision .content-container .body-image img {
-    width: 500px;
+    width: 450px;
   }
 }
 
@@ -581,7 +579,7 @@
     display: none;
   }
   .vision .content-container .body-image img {
-    width: 550px;
+    width: 400px;
   }
   .vision .content-container {
     padding-left: 30px;
@@ -597,16 +595,29 @@
   }
   .vision .col-lg-7.col-md-12 {
     position: static;
-    padding-right: 15px;
+  }
+  .vision .col-lg-7.col-md-12 .content-md {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .vision .content-container {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 0;
+  }
+
+  .vision .content-md {
+    display: block;
+    padding: 0;
   }
   .vision .content-container .contain-body .body-content p {
     margin-left: 0;
   }
   .vision .content-container .body-image {
-    height: 60px;
+    height: 50px;
   }
   .vision .content-container .body-image img {
-    width: 450px;
+    width: 350px;
   }
   .vision .content-md h2 {
     font-size: 28px;
@@ -615,6 +626,17 @@
     font-size: 16px;
     text-align: center;
   }
+  .vision .content-md p::before {
+    font-size: 16px;
+  }
+  
+  .vision .content-md p::after {
+    font-size: 16px;
+  }
+  .vision .row {
+    margin: 0;
+  }
+  
 }
 
 @media screen and (max-width: 575.98px) {
@@ -622,7 +644,7 @@
     height: 50px;
   }
   .vision .content-container .body-image img {
-    width: 350px;
+    width: 290px;
   }
 }
 /* Start vision responsive */
@@ -765,12 +787,14 @@
     height: 350px;
   }
   .purpose .purpose-images .image-box {
-    width: 300px;
+    text-align: center;
   }
   .purpose .purpose-images .image-box img {
+    width: 290px;
     border-radius: 60px;
   }
   .purpose .purpose-images .image-box:nth-child(2) {
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -836,7 +860,7 @@
     margin-bottom: 75px;
   }
   .time .time-images .image-contain {
-    width: 400px;
+    width: 380px;
     height: 150px;
   }
 }
@@ -853,7 +877,7 @@
     margin-bottom: 60px;
   }
   .time .time-images .image-contain {
-    width: 300px;
+    width: 270px;
     height: 300px;
   }
 }
@@ -873,7 +897,7 @@
     display: block;
   }
   .time .time-images .image-contain {
-    width: 400px;
+    width: 380px;
     height: 133px;
     margin-top: 30px;
     margin-left: auto;
@@ -889,7 +913,7 @@
     margin-bottom: 45px;
   }
   .time .time-images .image-contain {
-    width: 300px;
+    width: 290px;
     height: 100px;
     margin-top: 15px;
   }
