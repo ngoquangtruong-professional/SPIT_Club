@@ -526,7 +526,7 @@
   width: 500px;
   height: 100%;
   border-radius: 10px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .vision .content-container .contain-head {
